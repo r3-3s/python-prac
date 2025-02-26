@@ -1,0 +1,22 @@
+# Desk checking challenge
+# this program calculates the average
+# of a list of numbers and prints a message
+# based on the result
+
+def calculate_average(numbers):
+    total= sum(numbers)
+    return total / len(numbers)
+
+# a list of numbers
+numbers= [10, 20, 30, 40, 50]
+
+# call the function and print the result
+average= calculate_average(numbers)
+
+#check if the average is greater than or equal to 30
+if average >= 30:
+    message= "the average is high!"
+else:
+    message= "the average is low!"
+
+print(f"The average is {average}. {message}")
